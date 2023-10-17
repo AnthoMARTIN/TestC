@@ -1,0 +1,3 @@
+﻿  BlackJack.c
+C:\Users\tonye\source\repos\BlackJackC\BlackJackC\BlackJack.c(40,11): warning C4244: 'fonction' : conversion de 'time_t' en 'unsigned int', perte possible de données
+  BlackJackC.vcxproj -> C:\Users\tonye\source\repos\BlackJackC\x64\Debug\BlackJackC.exe
