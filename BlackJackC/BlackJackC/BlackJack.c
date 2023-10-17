@@ -3,12 +3,10 @@
 #include <stdlib.h>
 #include <time.h>
 
-// Fonction pour générer une carte aléatoire
 int genererCarte() {
-    return rand() % 13 + 1; // Valeurs possibles de 1 à 13 (As à Roi)
+    return rand() % 13 + 1; // Valeurs possibles de 1 Ã  13 (As Ã  Roi)
 }
 
-// Fonction pour calculer la valeur d'une main
 int calculerValeurMain(int main[], int nbCartes) {
     int valeur = 0;
     int as = 0; // Compte le nombre d'As dans la main
@@ -17,10 +15,10 @@ int calculerValeurMain(int main[], int nbCartes) {
         int carte = main[i];
 
         if (carte >= 10) {
-            valeur += 10; // Cartes de 10 à Roi valent 10 points
+            valeur += 10; // Cartes de 10 Ã  Roi valent 10 points
         }
         else if (carte == 1) {
-            valeur += 11; // As vaut 11 points par défaut
+            valeur += 11; // As vaut 11 points par dÃ©faut
             as++;
         }
         else {
@@ -29,7 +27,7 @@ int calculerValeurMain(int main[], int nbCartes) {
     }
 
     while (as > 0 && valeur > 21) {
-        valeur -= 10; // Si la main dépasse 21, réduire la valeur des As de 10 points chacun
+        valeur -= 10; // Si la main dÃ©passe 21, rÃ©duire la valeur des As de 10 points chacun
         as--;
     }
 
@@ -38,8 +36,8 @@ int calculerValeurMain(int main[], int nbCartes) {
 
 int main() {
     srand(time(NULL));
-    int mainJoueur[10]; // Main du joueur
-    int mainCroupier[10]; // Main du croupier
+    int mainJoueur[10]; 
+    int mainCroupier[10]; 
     int nbCartesJoueur = 0;
     int nbCartesCroupier = 0;
     int continuerPartie = 1;
@@ -73,7 +71,7 @@ int main() {
                 break;
             }
             else if (valeurMainJoueur > 21) {
-                printf("Desole, vous avez dépasse 21. Vous avez perdu.\n");
+                printf("Desole, vous avez dÃ©passe 21. Vous avez perdu.\n");
                 break;
             }
 
@@ -117,7 +115,7 @@ int main() {
         int valeurMainCroupier = calculerValeurMain(mainCroupier, nbCartesCroupier);
 
         if (valeurMainJoueur > 21) {
-            printf("Vous avez dépasse 21. Vous avez perdu.\n");
+            printf("Vous avez dÃ©passe 21. Vous avez perdu.\n");
         }
         else if (valeurMainCroupier > 21 || valeurMainJoueur > valeurMainCroupier) {
             printf("Felicitations, vous avez gagne!\n");
