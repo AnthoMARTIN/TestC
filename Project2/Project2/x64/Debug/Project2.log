@@ -1,3 +1,0 @@
-﻿  main.c
-C:\Users\tonye\source\repos\Project2\Project2\main.c(10,11): warning C4244: 'fonction' : conversion de 'time_t' en 'unsigned int', perte possible de données
-  Project2.vcxproj -> C:\Users\tonye\source\repos\Project2\x64\Debug\Project2.exe
