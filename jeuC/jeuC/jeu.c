@@ -17,11 +17,9 @@ int main() {
         printf("Votre choix : ");
         scanf("%d", &joueur);
 
-        // Génération du choix de l'ordinateur (aléatoire)
         srand(time(NULL));
         ordinateur = rand() % 3 + 1;
 
-        // Affichage des choix
         printf("Vous avez choisi : ");
         switch (joueur) {
         case 1:
@@ -51,7 +49,6 @@ int main() {
             break;
         }
 
-        // Détermination du gagnant
         if (joueur == ordinateur) {
             printf("Egalite !\n");
         }
@@ -62,7 +59,6 @@ int main() {
             printf("L'ordinateur a gagne !\n");
         }
 
-        // Demande de continuer la partie
         printf("Voulez-vous jouer a nouveau ? (1 pour Oui, 0 pour Non) : ");
         scanf("%d", &continuerPartie);
     }
