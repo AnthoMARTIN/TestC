@@ -1,3 +1,0 @@
-﻿  jeu.c
-C:\Users\tonye\source\repos\jeuC\jeuC\jeu.c(21,15): warning C4244: 'fonction' : conversion de 'time_t' en 'unsigned int', perte possible de données
-  jeuC.vcxproj -> C:\Users\tonye\source\repos\jeuC\x64\Debug\jeuC.exe
